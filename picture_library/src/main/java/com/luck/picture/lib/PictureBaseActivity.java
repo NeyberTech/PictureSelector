@@ -507,14 +507,14 @@ public abstract class PictureBaseActivity extends AppCompatActivity {
             if (config.camera && config.selectionMode == PictureConfig.MULTIPLE) {
                 images.addAll(images.size() > 0 ? images.size() - 1 : 0, selectionMedias);
             }
-            if (config.isCheckOriginalImage) {
+            // if (config.isCheckOriginalImage) {
                 int size = images.size();
                 for (int i = 0; i < size; i++) {
                     LocalMedia media = images.get(i);
                     media.setOriginal(true);
                     media.setOriginalPath(media.getPath());
                 }
-            }
+            // }
             if (PictureSelectionConfig.listener != null) {
                 PictureSelectionConfig.listener.onResult(images);
             } else {
@@ -565,10 +565,10 @@ public abstract class PictureBaseActivity extends AppCompatActivity {
             if (media.isCut() && media.isCompressed()) {
                 media.setAndroidQToPath(media.getCompressPath());
             }
-            if (config.isCheckOriginalImage) {
+            // if (config.isCheckOriginalImage) {
                 media.setOriginal(true);
                 media.setOriginalPath(media.getAndroidQToPath());
-            }
+            // }
         }
         if (config.camera && config.selectionMode == PictureConfig.MULTIPLE) {
             images.addAll(images.size() > 0 ? images.size() - 1 : 0, selectionMedias);
@@ -610,7 +610,7 @@ public abstract class PictureBaseActivity extends AppCompatActivity {
                     } else if (media.isCut() && media.isCompressed()) {
                         media.setAndroidQToPath(media.getCompressPath());
                     }
-                    if (config.isCheckOriginalImage) {
+                    // if (config.isCheckOriginalImage) {
                         media.setOriginal(true);
                         if (isCopyPath) {
                             media.setOriginalPath(media.getAndroidQToPath());
@@ -619,7 +619,7 @@ public abstract class PictureBaseActivity extends AppCompatActivity {
                                     media.getPath(), media.getWidth(), media.getHeight(), media.getMimeType(), config.cameraFileName);
                             media.setOriginalPath(originalPath);
                         }
-                    }
+                    // }
                 }
                 return images;
             }
