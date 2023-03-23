@@ -32,7 +32,7 @@
         android:layout_height="60dp"
         android:layout_below="@id/iv_dot"
         android:layout_margin="3dp"
-        android:scaleType_PictureSelector="centerCrop" />
+        android:scaleType="centerCrop" />
 
     <ImageView
         android:id="@+id/iv_video"
@@ -41,7 +41,7 @@
         android:layout_below="@id/iv_dot"
         android:layout_margin="3dp"
         android:background="@color/ucrop_color_ec"
-        android:scaleType_PictureSelector="centerInside"
+        android:scaleType="centerInside"
         android:src="@drawable/ucrop_ic_default_video"
         android:visibility="gone" />
 
