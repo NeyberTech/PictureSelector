@@ -19,7 +19,7 @@
             android:background="@color/picture_color_transparent"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:scaleType="centerInside"
+            android:scaleType_PictureSelector="centerInside"
             android:src="@drawable/picture_icon_back" />
 
         <TextView
@@ -44,7 +44,7 @@
             android:background="@color/picture_color_transparent"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
-            android:scaleType="centerInside"
+            android:scaleType_PictureSelector="centerInside"
             android:src="@drawable/picture_icon_delete" />
     </RelativeLayout>
 
